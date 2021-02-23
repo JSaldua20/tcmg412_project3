@@ -9,3 +9,9 @@ if FileExists == False:
   url = "https://s3.amazonaws.com/tcmg476/http_access_log"
   urllib.request.urlretrieve(url, FilePath)
   
+else:
+  print ("It looks like you already have the file")
+
+print ("Reviewing the data now")
+TextFile = open("http_access_log.txt")
+Log = TextFile.read()
