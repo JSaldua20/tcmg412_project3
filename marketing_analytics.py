@@ -15,3 +15,4 @@ else:
 print ("Reviewing the data now")
 TextFile = open("http_access_log.txt")
 Log = TextFile.read()
+LastYearCount = Log.count("1995")
